@@ -10,7 +10,7 @@ def Lower_bound(array,target):
         # If our mid is less than the target, 
         # we move the low pointer to mid+1 to continue searching in the right half of the array. 
         # This way, we can find the lower bound of the target in a sorted array efficiently.
-        if array[mid]>target:
+        if array[mid]>=target:
             ans=mid 
             high=mid-1 
         else:
